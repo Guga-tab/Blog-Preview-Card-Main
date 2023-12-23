@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font: 'Figtree', sans-serif;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: var(--font);
+}
+
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.card {
+    background-color: var(--white);
+    max-width: 415px;
+    min-width: 315px;
+
+    padding: 22px;
+    text-align: left;
+
+    border-radius: 18px;
+    border: solid 0.5px black;
+    box-shadow: 6px 8px black;
+}
+
+.card > #illustImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#btn {
+    background-color: var(--yellow);
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin: 15px 0 14px 0;
+}
+
+.card > p, h2, h3 {
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+}
+
+h3 {
+    font-weight: lighter;
+    color: var(--Grey);
+}
+
+.perfil {
+    display: flex;
+    padding-top: 15px;
+}
+
+#imgGreg {
+    width: 10%;
+    height: 10%;
+}
+
+#nameGreg {
+    font-weight: bolder;
+    padding: 10px 10px;
+}
+
+/* Responsive */
+
+@media (min-width: 240px) and (max-width: 343px) {
+    .card {
+        min-width: 250px; 
+        margin: 0 15px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 12.4px;
+    }
+    .perfil{
+        padding-top: 4px;
+    }
+
+    #imgGreg{
+        padding-top: 3px;
+    }
+    #nameGreg{
+        font-size: 8px;
+    }
+}
+
+/* Responsive */
+
+@media (min-width: 344px ) and (max-width: 450px) {
+    .card {
+        max-width: 250px; 
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 12.4px;
+    }
+
+    .perfil{
+        padding-top: 4px;
+    }
+
+    #imgGreg{
+        padding-top: 3px;
+    }
+    
+    #nameGreg{
+        font-size: 13px;
+    }
+}
